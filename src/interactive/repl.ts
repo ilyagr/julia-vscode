@@ -751,7 +751,8 @@ async function selectJuliaBlock() {
 
 let g_cellDelimiters = [
     /^##(?!#)/,
-    /^#(\s?)%%/
+    /^#(\s?)%%/,
+    /%# ╔═╡ /,  // Pluto .jl files separator
 ]
 
 function isCellBorder(s: string, isStart: boolean, isJmd: boolean) {
