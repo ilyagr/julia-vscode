@@ -753,6 +753,7 @@ let g_cellDelimiters = [
     /^##(?!#)/,
     /^#(\s?)%%/,
     /%# ╔═╡ /,  // Pluto .jl files separator
+    // https://github.com/julia-vscode/julia-vscode/issues/2223
 ]
 
 function isCellBorder(s: string, isStart: boolean, isJmd: boolean) {
